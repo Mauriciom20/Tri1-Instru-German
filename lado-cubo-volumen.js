@@ -21,14 +21,14 @@ let esMayor = (edad >= 18? alert(`usted tiene ` + edad + ` es mayor de edad`) : 
 
 const compra = prompt("Ingrese el producto del que desea ver si tiene iva(lentejas, crema, arroz, vino)")
 let lentejas = "las lentejas si pagan IVA"
-if (compra = "lentejas")alert(lentejas + crema + arroz + vino)
+if (compra = "lentejas")alert(lentejas)
     else("ingrese un producto valido")
-let crema = "la crema no pagan IVA"
-if (compra = "lentejas")alert(lentejas + crema + arroz + vino)
+let crema = "la crema no paga IVA"
+if (compra = "crema")alert(crema)
     else("ingrese un producto valido")
-let arroz = "el arroz si pagan IVA"
-if (compra = "lentejas")alert(lentejas + crema + arroz + vino)
+let arroz = "el arroz si paga IVA"
+if (compra = "arroz")alert(arroz)
     else("ingrese un producto valido")
-let vino = "el vino no pagan IVA"
-if (compra = "lentejas")alert(lentejas + crema + arroz + vino)
+let vino = "el vino no paga IVA"
+if (compra = "vino")alert(vino)
     else("ingrese un producto valido")
