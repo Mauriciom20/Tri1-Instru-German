@@ -19,7 +19,7 @@ let esMayor = (edad >= 18? alert(`usted tiene ` + edad + ` es mayor de edad`) : 
 
 //En un supermercado se tiene los siguientes productos: lentejas, crema, arroz y vino. Las lentejas y el arroz no pagan IVA, el vino y la crema si. Cree un programa que reciba el nombre de alguno de los productos mencionados y muestre si el producto paga IVA o no.
 
-const compra = prompt("Ingrese el producto del que desea ver si tiene iva(lentejas, crema, arroz, vino)")
+/*const compra = prompt("Ingrese el producto del que desea ver si tiene iva(lentejas, crema, arroz, vino)")
 let lentejas = "las lentejas si pagan IVA"
 if (compra == "lentejas") {
     alert(lentejas)
@@ -43,4 +43,37 @@ if (compra == "vino") {
     alert(vino)
     } else {
         ("ingrese un producto valido")
-    }
+    }*/
+
+//Cree un programa que reciba dos números y muestre el mayor. En caso de que los números sean iguales también se debe mostrar al usuario.
+
+/*alert("Escribe dos numero para diferenciar cual es mayor o si son iguales")
+let x = Number(prompt("Ingrese el primer Numero"))
+let y = Number(prompt("Ingrese el segundo Numero"))
+
+if (x > y) {
+    alert(`${x} es mayor que ${y}`) 
+} else if (y > x){
+    alert(`${y} es mayor que ${x}`)
+} else if ( x == y){
+    alert(`${x} es igual que ${y}`)
+} else {
+    alert("los datos son incorrectos, ingrese valores numericos")
+}*/
+
+//Cree un programa que lea los tres ángulos internos de un triángulo y muestre si los ángulos corresponden a un triángulo o no.
+
+/*let angulo1 = parseInt(prompt("Ingrese el valor del primer angulo"))
+let angulo2 = parseInt(prompt("Ingrese el valor del segundo angulo"))
+let angulo3 = parseInt(prompt("Ingrese el valor del tercer angulo"))
+
+let triangulo = (angulo1 + angulo2 + angulo3) == 180? alert("es un triangulo"): alert("no es un triangulo")*/
+
+//Cree un programa que lea un número y muestre si éste es par o impar (con un modulo)
+
+/*const a = "es par"
+const b = "es impar"
+
+let num = prompt("Ingrese un numero para identificar si es par o impar(par = true, impar = false)") 
+let espar = num % 2 === 0 ? a : b;
+    alert(espar)*/
