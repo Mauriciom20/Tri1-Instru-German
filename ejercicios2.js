@@ -94,22 +94,35 @@ salarioSemanal = alert(`Su salario semanal es ${valorHorasTotales}`)*/
 
 //4. Escriba un programa que dado el sueldo de un empleado aplique un aumento del 12% si su sueldo es inferior a $300.000, o aplique un aumento del 10% si su sueldo es infrior a $500.000 y 5% en caso contrario. Se debe mostrar el nuevo sueldo del trabajador.
 
+//Ejercicio #4
+
 /*let sueldoEmpleado = parseInt(prompt("Ingrese el sueldo del empleado"))
-let aumentoSueldo = sueldoEmpleado <= 300000? sueldoEmpleado * 0.12 : sueldoEmpleado <= 500000? sueldoEmpleado * 0.10 : sueldoEmpleado * 0.05
-let sueldoTotal = sueldoEmpleado + aumentoSueldo
-alert(`El sueldo del trabajador es ${sueldoTotal}`)*/
+let aumentoSueldo = sueldoEmpleado >= 0 && sueldoEmpleado <= 300000? sueldoEmpleado * 0.12 : sueldoEmpleado <= 500000? sueldoEmpleado * 0.10 : sueldoEmpleado > 500000? sueldoEmpleado * 0.05 : 0
+let sueldoTotal = sueldoEmpleado + aumentoSueldo 
+let validacion = sueldoEmpleado >= 0 && sueldoEmpleado != Number? alert(`El sueldo del trabajador es ${sueldoTotal}`) : alert('Error, ingrese un valor valido')*/
 
+//5. De un estudiante se tienen 3 notas parciales. Se desea obtener la nota definitiva aplicando los porcentajes 30%, 30% y 40% respectivamente. De acuedo a la definitiva en este curso, recibirá un descuento para el próximo curso (si lo gana) o una multa (si lo pierde), de acuerdo a la siguiente tabla. Debe solicitar el valor del curso. Definitiva - Descuento o Multa / 0.0 - 1.9 - +40% / 2.0 - 2.9 - +20% / 3.0 - 4.4 - -30% / 4.5 - 5.0 - -40% /
 
-/*//5. De un estudiante se tienen 3 notas parciales. Se desea obtener la nota definitiva aplicando los porcentajes 30%, 30% y 40% respectivamente. De acuedo a la definitiva en este curso, recibirá un descuento para el próximo curso (si lo gana) o una multa (si lo pierde), de acuerdo a la siguiente tabla. Debe solicitar el valor del curso. 
-// Definitiva - Descuento o Multa / 0.0 - 1.9 - +40% / 2.0 - 2.9 - +20% / 3.0 - 4.4 - -30% / 4.5 - 5.0 - -40% /
+/*let validacionNotas
+let validacionValorCurso
+let ValidacionValorCursoTotal
+let nota1 = parseFloat(prompt("Ingrese el valor de la nota 1(0 a 5)"))
+let nota2 = parseFloat(prompt("Ingrese el valor de la nota 2(0 a 5)"))
+let nota3 = parseFloat(prompt("Ingrese el valor de la nota 3(0 a 5)"))
+let notaDefinitiva = (nota1 >= 0 && nota1 <= 5 && nota1 != Number? nota1 * 0.30: alert('Error, ingrese valores de nota valido(nota 1)')) + (nota2 >= 0 && nota2 <= 5 && nota2 != Number? nota2 * 0.30: alert('Error, ingrese valores de nota valido(nota 2)')) + (nota3 >= 0 && nota3 <= 5 && nota3 != Number? nota3 * 0.40 : alert('Error, ingrese valores de nota valido(nota 3)'))
+validacionNotas = notaDefinitiva >= 0 && notaDefinitiva <= 5 && notaDefinitiva != Number? true : console.log('Error, ingrese valores de nota valido') + false
 
-
-let nota1 = parseFloat(prompt("Ingrese el valor de la nota 1(1 a 5)"))
-let nota2 = parseFloat(prompt("Ingrese el valor de la nota 2(1 a 5)"))
-let nota3 = parseFloat(prompt("Ingrese el valor de la nota 3(1 a 5)"))
 let valorCurso = parseInt(prompt("Ingrese el valor del curso"))
-let notaDefinitiva = (nota1 * 0.30) + (nota2 * 0.30) + (nota3 * 0.40)
-alert(`la nota definitiva es ${notaDefinitiva}`)
-let descuento = notaDefinitiva <= 1.9 ? valorCurso * 0.40 : notaDefinitiva <= 2.9 ? valorCurso * 0.20 : notaDefinitiva <= 4.4 ? valorCurso * 0.30 : notaDefinitiva <= 5.0? valorCurso * 0.40 : alert('Error')
-let valorTotal = notaDefinitiva <= 1.9 ? valorCurso + descuento : notaDefinitiva <= 2.9 ? valorCurso + descuento : notaDefinitiva <= 4.4 ? valorCurso - descuento : notaDefinitiva <= 5.0? valorCurso - descuento : alert('Error')
-alert(`El valor a pagar por el curso es ${valorTotal}`)*/
+validacionValorCurso = valorCurso >= 0 && valorCurso != Number? true : alert('Error, ingrese un valor de curso valido') + false
+
+let descuento = notaDefinitiva <= 1.9 ? valorCurso * 0.40 : notaDefinitiva <= 2.9 ? valorCurso * 0.20 : notaDefinitiva <= 4.4 ? valorCurso * 0.30 : notaDefinitiva <= 5.0? valorCurso * 0.40 : console.log('Error en notas y/o en valor del curso(descuento)')
+
+let valorTotal = notaDefinitiva <= 1.9 ? valorCurso + descuento : notaDefinitiva <= 2.9 ? valorCurso + descuento : notaDefinitiva <= 4.4 ? valorCurso - descuento : notaDefinitiva <= 5.0? valorCurso - descuento : console.log('Error en notas y/o en valor del curso(valorTotal)')
+if (ValidacionValorCursoTotal = validacionNotas == true && validacionValorCurso == true) 
+    {alert(`El valor a pagar por el curso es ${valorTotal}`) 
+    } else if (ValidacionValorCursoTotal = validacionNotas == true && validacionValorCurso == false) {
+        alert('Error, ingrese un valor de curso valido')
+    } else if(ValidacionValorCursoTotal = validacionNotas == false && validacionValorCurso == true) {
+        alert('Error, ingrese valores de nota valido')
+    } else console.log("Error, ingrese valores validos")
+console.log(ValidacionValorCursoTotal)*/
