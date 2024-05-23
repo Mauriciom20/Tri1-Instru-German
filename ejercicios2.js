@@ -131,16 +131,21 @@ console.log(ValidacionValorCursoTotal)*/
 //Los requisitos son: Ser bachiller para el ADSO, para el resto de programas el requisito es tener hasta 9 grado aprobado. También, tener cédula o cédula de extranjería. También, estar de acuerdo con el reglamento del aprendiz.
 
 let programas = prompt("Escriba el programa al que desea maricularse: ADSO, SEGURIDAD DIGITAL, ANALITICA DE DATOS")
-alert(`Antes de empezar la matricula debes cumplir con los siguientes requisitos: Tener cédula o cédula de extranjería, estar de acuerdo con el reglamento del aprendiz,tener hasta 9° aprobado(SEGURIDAD DIGITAL, ANALITICA DE DATOS), ser bachiller(ADSO)`)
-let documentoDeIdentificacion = number(prompt("Escriba su cedula o cédula de extranjería"))
+alert(`Antes de empezar la matricula debes cumplir con los siguientes requisitos: Tener cedula o cedula de extranjeria, estar de acuerdo con el reglamento del aprendiz,tener hasta 9° aprobado(SEGURIDAD DIGITAL, ANALITICA DE DATOS), ser bachiller(ADSO)`)
+let documentoDeIdentificacion = Number(prompt("Escriba su cedula o cédula de extranjería"))
 let reglamentoDelAprendiz = prompt("Esta de acuerdo con el reglamento del aprendiz?(Si / No)")
 let novenoGrado = prompt("Tienes hasta 9° aprobado?(Si / No)")
 let bachiller = prompt("Eres Bachiller?(Si / No)")
 
-requisitosAdso
-let matricula = programas == "ADSO"? requisitosAdso : programas == "SEGURIDAD DIGITAL"? requisitosSeguridadDigital : programas == "ANALITICA DE DATOS"? requisitosAnaliticaDeDatos : alert(`No se Escogio ningun programa`)
-if(requisitosadso == true){
-    a
-    } else if (matricula == "SEGURIDAD DIGITAL" || "ANALITICA DE DATOS"){
-    b
-    }
+let requisitosAdso = (documentoDeIdentificacion == Number? true : false) + (reglamentoDelAprendiz == "si" || "Si"? true : false) + (bachiller == "si" || "Si"? true : false) 
+let requisitosSeguridadDigital = (documentoDeIdentificacion == Number? true : false) + (reglamentoDelAprendiz == "si" || "Si"? true : false) + (novenoGrado || bachiller == "si" || "Si"? true : false) 
+let requisitosAnaliticaDeDatos= (documentoDeIdentificacion == Number? true : false) + (reglamentoDelAprendiz == "si" || "Si"? true : false) + (novenoGrado || bachiller == "si" || "Si"? true : false) 
+
+let matricula = programas == "adso" || "ADSO"? requisitosAdso : programas == "seguridad digital" || "Seguridad digital" || "SEGURIDAD DIGITAL"? requisitosSeguridadDigital : programas == "analitica de datos" || "Analitica de datos" ||"ANALITICA DE DATOS"? requisitosAnaliticaDeDatos : alert(`No se Escogio ningun programa`)
+if(matricula == requisitosAdso){
+    alert(`estas matriculado en ADSO`)
+    } else if (matricula == requisitosSeguridadDigital){
+        alert(`estas matriculado en SEGURIDAD DIGITAL`)
+    } else if(matricula == requisitosAnaliticaDeDatos) {
+        alert(`estas matriculado en ANALITICA DE DATOS`)
+    } else console.log("Error")
