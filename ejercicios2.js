@@ -76,34 +76,35 @@ let triangulo = (angulo1 + angulo2 + angulo3) == 180? alert("es un triangulo"): 
 let espar = numero % 2 === 0? "es par": "es impar";
     alert(espar);*/
 
-//Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera: 
+//3. Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera: 
 //Si trabaja 40 horas o menos se le paga $16000 pesos por hora, 
 //si trabaja más de 40 horas se le paga $16000 por cada una de las primeras 40 horas y 
 //$20000 por cada hora extra.
 
-/*alert("ingrese las horas que a trabajado para saber su salario, si supera las 40 horas se consideran horas extra, (primero se agregan las primeras 40horas y despues se agregan las horas extra)")
+/*alert("ingrese las horas que a trabajado esta semana para saber su salario, si supera las 40 horas se consideran horas extra, (primero se agregan las primeras 40horas y despues se agregan las horas extra)")
 let salarioSemanal = ""
-let horasTrabajadas = parseInt(prompt("Ingrese el numero de horas trabajadas(1-40)"))
-let horasExtra = parseInt(prompt("Ingrese el numero de horas Extra trabajadas")) 
-let horasTotales = horasTrabajadas + horasExtra
-let valorHorasTrabajadas = horasTrabajadas * 16000
-let valorHorasExtra = horasExtra * 20000 
-let valorHorasTotales = valorHorasTrabajadas + valorHorasExtra
+let horasTrabajadasSemana = parseInt(prompt("Ingrese el numero de horas trabajadas(1-40)"))
+let horasExtraSemana = parseInt(prompt("Ingrese el numero de horas Extra trabajadas")) 
+let horasTotalesSemana = horasTrabajadasSemana + horasExtraSemana
+alert(`Trabajo un total de ${horasTotalesSemana} horas`)
+let valorHorasTrabajadasSemana = horasTrabajadasSemana * 16000
+let valorHorasExtraSemana = horasExtraSemana * 20000 
+let valorHorasTotales = valorHorasTrabajadasSemana + valorHorasExtraSemana
 salarioSemanal = alert(`Su salario semanal es ${valorHorasTotales}`)*/
 
 //4. Escriba un programa que dado el sueldo de un empleado aplique un aumento del 12% si su sueldo es inferior a $300.000, o aplique un aumento del 10% si su sueldo es infrior a $500.000 y 5% en caso contrario. Se debe mostrar el nuevo sueldo del trabajador.
 
 /*let sueldoEmpleado = parseInt(prompt("Ingrese el sueldo del empleado"))
 let aumentoSueldo = sueldoEmpleado <= 300000? sueldoEmpleado * 0.12 : sueldoEmpleado <= 500000? sueldoEmpleado * 0.10 : sueldoEmpleado * 0.05
-let sueldo = sueldoEmpleado + aumentoSueldo
-alert(`El sueldo del trabajador es ${sueldo}`)*/
+let sueldoTotal = sueldoEmpleado + aumentoSueldo
+alert(`El sueldo del trabajador es ${sueldoTotal}`)*/
 
 
-//5. De un estudiante se tienen 3 notas parciales. Se desea obtener la nota definitiva aplicando los porcentajes 30%, 30% y 40% respectivamente. De acuedo a la definitiva en este curso, recibirá un descuento para el próximo curso (si lo gana) o una multa (si lo pierde), de acuerdo a la siguiente tabla. Debe solicitar el valor del curso. 
+/*//5. De un estudiante se tienen 3 notas parciales. Se desea obtener la nota definitiva aplicando los porcentajes 30%, 30% y 40% respectivamente. De acuedo a la definitiva en este curso, recibirá un descuento para el próximo curso (si lo gana) o una multa (si lo pierde), de acuerdo a la siguiente tabla. Debe solicitar el valor del curso. 
 // Definitiva - Descuento o Multa / 0.0 - 1.9 - +40% / 2.0 - 2.9 - +20% / 3.0 - 4.4 - -30% / 4.5 - 5.0 - -40% /
 
 
-/*let nota1 = parseFloat(prompt("Ingrese el valor de la nota 1(1 a 5)"))
+let nota1 = parseFloat(prompt("Ingrese el valor de la nota 1(1 a 5)"))
 let nota2 = parseFloat(prompt("Ingrese el valor de la nota 2(1 a 5)"))
 let nota3 = parseFloat(prompt("Ingrese el valor de la nota 3(1 a 5)"))
 let valorCurso = parseInt(prompt("Ingrese el valor del curso"))
