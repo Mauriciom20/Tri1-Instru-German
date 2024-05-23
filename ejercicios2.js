@@ -130,7 +130,7 @@ console.log(ValidacionValorCursoTotal)*/
 //Crear un programa en Javascript que matricule a un aspirante en un programa del SENA. Los programas disponibles son >: ADSO, SEGURIDAD DIGITAL, ANALITICA DE DATOS. 
 //Los requisitos son: Ser bachiller para el ADSO, para el resto de programas el requisito es tener hasta 9 grado aprobado. También, tener cédula o cédula de extranjería. También, estar de acuerdo con el reglamento del aprendiz.
 
-let programas = prompt("Escriba el programa al que desea maricularse: ADSO, SEGURIDAD DIGITAL, ANALITICA DE DATOS")
+/*let programas = prompt("Escriba el programa al que desea maricularse: ADSO, SEGURIDAD DIGITAL, ANALITICA DE DATOS")
 alert(`Antes de empezar la matricula debes cumplir con los siguientes requisitos: Tener cedula o cedula de extranjeria, estar de acuerdo con el reglamento del aprendiz,tener hasta 9° aprobado(SEGURIDAD DIGITAL, ANALITICA DE DATOS), ser bachiller(ADSO)`)
 let documentoDeIdentificacion = Number(prompt("Escriba su cedula o cédula de extranjería"))
 let reglamentoDelAprendiz = prompt("Esta de acuerdo con el reglamento del aprendiz?(Si / No)")
@@ -148,4 +148,4 @@ if(matricula == requisitosAdso){
         alert(`estas matriculado en SEGURIDAD DIGITAL`)
     } else if(matricula == requisitosAnaliticaDeDatos) {
         alert(`estas matriculado en ANALITICA DE DATOS`)
-    } else console.log("Error")
+    } else console.log("Error")*/
