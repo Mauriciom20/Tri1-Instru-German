@@ -35,4 +35,7 @@ alert(`Su aumento es ${sueldoTrabajador}`);*/
 let seleccionarSemilla = prompt("seleccione el tipo de semilla que desea: \ncebolla: larga o de huevo \npapa: criolla, pastusa o salentuna \ntomate: chonto").toLocaleLowerCase()
 let cantidadSemillas = Number(prompt("seleccione la cantidad de semillas que desea"))
 let costoCadaSemilla = seleccionarSemilla == "cebolla larga"? costoDeProduccionCultivoSemilla = 1500 * cantidadSemillas : seleccionarSemilla == "cebolla de huevo"? costoDeProduccionCultivoSemilla = 1300 * cantidadSemillas : seleccionarSemilla == "papa criolla"? costoDeProduccionCultivoSemilla = 8000 * cantidadSemillas : seleccionarSemilla == "papa pastusa"? costoDeProduccionCultivoSemilla = 9000 * cantidadSemillas : seleccionarSemilla == "papa salentuna"? costoDeProduccionCultivoSemilla = 1100 * cantidadSemillas : seleccionarSemilla == "tomate chonto"? costoDeProduccionCultivoSemilla = 1500 * cantidadSemillas : alert(`Error, digite valores validos`)
+console.log(costoDeProduccionCultivoSemilla)
+let descuento = costoDeProduccionCultivoSemilla >= 50000? costoDeProduccionCultivoSemilla * 0.68 : costoDeProduccionCultivoSemilla >= 30000? costoDeProduccionCultivoSemilla * 0.32 : 0
+costoDeProduccionCultivoSemilla = costoDeProduccionCultivoSemilla >= 50000? costoDeProduccionCultivoSemilla - descuento : costoDeProduccionCultivoSemilla >= 30000? costoDeProduccionCultivoSemilla - descuento : costoDeProduccionCultivoSemilla + console.log("No hay descuento")
 alert(costoDeProduccionCultivoSemilla)*/
