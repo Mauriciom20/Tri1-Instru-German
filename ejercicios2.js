@@ -149,3 +149,45 @@ if(matricula == requisitosAdso){
     } else if(matricula == requisitosAnaliticaDeDatos) {
         alert(`estas matriculado en ANALITICA DE DATOS`)
     } else console.log("Error")*/
+
+//El batallon de Alta montaña necesita un programa que informe si un aspirante es apto o no para entrar a las fuerzas militares y de ser apto, debe calcular el valor que debe pagar el aspirante. De cada aspirante se tienen cuatro atributos: genero, dad, estatura, resultado del Icfes. Se considera que una persona es apta si cumple las siguienes consiciones:
+//Hombres / Genero: M - Estatura: 1.70 en adelante - Edad: 18 a 25 - Resultado Icfes: 60 puntos en adelante / Mujeres / Genero: F - Estatura: 1.50 en adelante - Edad: 18 a 28 - Resultado Icfes: 60 puntos en adelante
+//El valor de la matricula es 11.800.000 y se aplica un descuento o un aumento que esta dado por el resultado de los ICFES: / Hombres y Mujeres / Datos: - D: Descuento y A: Aumento/ Menor de 65pto - A: 25% / Entre 66 y 70pto. edad>22 - N/A / Entre 66 y 70pto. edad<=22 - D: 25% / Mayor 70pto - D: 50%
+
+/*alert("Si desea saber si es apto para las fuerzas militares llene los datos a continuacion");
+let genero = prompt("Cual es su genero? ('M' para Hombres), ('F' para Mujeres)").toUpperCase();
+let edad = parseInt(prompt("Ingrese su edad"));
+let estatura = parseFloat(prompt("Ingrese su estatura"));
+let resultadoIcfes = Number(prompt("Ingrese el resultado de su prueba ICFES(0-100)"));
+let valorMatricula = 11800000;
+
+
+let validaconResultadoIcfes = resultadoIcfes >=0 && resultadoIcfes <=100? true : alert("Error, Ingrese valor de prueba ICFES(0-100)") + false;
+let requisitosHombres = (estatura >= 1.70? true : false) + (edad >= 18 && edad <= 25? true : false) + (resultadoIcfes >= 60? true : false);
+let requisitosMujeres = (estatura >= 1.50? true : false) + (edad >= 18 && edad <= 28? true : false) + (resultadoIcfes >= 60? true : false);
+let validacionGenero = genero == "M"? requisitosHombres : genero == "F"? requisitosMujeres : alert("Error, ingrese un valor validado (M - Hombres) o (F - Mujeres)")
+console.log(`Vg: ${validacionGenero}`)
+let aumento
+if(resultadoIcfes < 65 && (requisitosHombres == true || requisitosMujeres == true)){
+    aumento = valorMatricula * 0.25;
+    } else {aumento = 0}
+console.log(`Aumento: ${aumento}`)
+let descuento
+if(resultadoIcfes >= 66 && resultadoIcfes <= 70 && edad > 22 && (requisitosHombres == true || requisitosMujeres == true)){
+    descuento = valorMatricula * 0;
+    } else if(resultadoIcfes >= 66 && resultadoIcfes <= 70 && edad <= 22 && (requisitosHombres == true || requisitosMujeres == true)){
+    descuento = valorMatricula * 0.25;
+    } else if(resultadoIcfes > 70 && (requisitosHombres == true || requisitosMujeres == true)){
+    descuento = valorMatricula * 0.5;
+    } else { 
+    descuento = 0
+    }
+console.log(`Descuento: ${descuento}`);
+
+let ValorPagoAspirante = aumento + valorMatricula - descuento;
+
+if(genero == "M"){
+    alert(`eres apto para las fuerzas militares, debes pagar: ${ValorPagoAspirante}`);
+    } else if(genero == "F"){
+    alert(`eres apta para las fuerzas militares, debes pagar: ${ValorPagoAspirante}`);
+    } else console.log("Error");*/
