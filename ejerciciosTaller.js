@@ -26,3 +26,13 @@ if(categoriaEmpleado == 1 && sueldoActual == Number && sueldoActual >= 0){
 let aumento = sueldoEmpleado >=0 && sueldoEmpleado <= 300000? sueldoEmpleado * 0.12 : sueldoEmpleado <= 500000? sueldoEmpleado * 0.1 : sueldoEmpleado > 500000? sueldoEmpleado * 0.08 : alert(`Error, ingrese el sueldo en digitos numericos positivos`);
 let sueldoTrabajador = sueldoEmpleado + aumento;
 alert(`Su aumento es ${sueldoTrabajador}`);*/
+
+//Ejercicio # 3
+//Un agricultor desea saber el costo de produccion de un cultivo de acuerdo a la semilla seleccionada, conociendo el numero de semillas que utilizara y el costo de cada semilla para seleccionar la semilla. (tabla. / tipo - valor cada semilla / cebolla larga - 1500 / cebolla de huevo - 1300 / papa ciolla - 8000 / papa pastusa - 9000 / papa salentuna - 1100 / tomate chonto - 1500)
+//Si el valor de produccion del producto seleccionado es mayor a 30000 el gobierno subsidiara 32%, pero si es mayor o igual a 50000 el gobierno subsidiara el 68%.
+
+/*let costoDeProduccionCultivoSemilla
+let seleccionarSemilla = prompt("seleccione el tipo de semilla que desea: \ncebolla: larga o de huevo \npapa: criolla, pastusa o salentuna \ntomate: chonto").toLocaleLowerCase()
+let cantidadSemillas = Number(prompt("seleccione la cantidad de semillas que desea"))
+let costoCadaSemilla = seleccionarSemilla == "cebolla larga"? costoDeProduccionCultivoSemilla = 1500 * cantidadSemillas : seleccionarSemilla == "cebolla de huevo"? costoDeProduccionCultivoSemilla = 1300 * cantidadSemillas : seleccionarSemilla == "papa criolla"? costoDeProduccionCultivoSemilla = 8000 * cantidadSemillas : seleccionarSemilla == "papa pastusa"? costoDeProduccionCultivoSemilla = 9000 * cantidadSemillas : seleccionarSemilla == "papa salentuna"? costoDeProduccionCultivoSemilla = 1100 * cantidadSemillas : seleccionarSemilla == "tomate chonto"? costoDeProduccionCultivoSemilla = 1500 * cantidadSemillas : alert(`Error, digite valores validos`)
+alert(costoDeProduccionCultivoSemilla)*/
