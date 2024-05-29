@@ -1,5 +1,5 @@
 //Ejercicio # 1 
-//Dados el sueldo acual y la categoria de un empleao, calcular el aumento correspondiente de acuerdo a la tabla: /Categoria - aumento/ 1 - 12% / 2 - 10 %/ 3 / 8% / 4 - 5 %/
+//Dados el sueldo acual y la categoria de un empleado, calcular el aumento correspondiente de acuerdo a la tabla: /Categoria - aumento/ 1 - 12% / 2 - 10 %/ 3 / 8% / 4 - 5 %/
 
 /*let sueldoActual = Number(prompt("Ingrese el sueldo actual"));
 let categoriaEmpleado = Number(prompt("Ingrese su categoria (1 a 4)"));
