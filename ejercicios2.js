@@ -154,7 +154,7 @@ if(matricula == requisitosAdso){
 //Hombres / Genero: M - Estatura: 1.70 en adelante - Edad: 18 a 25 - Resultado Icfes: 60 puntos en adelante / Mujeres / Genero: F - Estatura: 1.50 en adelante - Edad: 18 a 28 - Resultado Icfes: 60 puntos en adelante
 //El valor de la matricula es 11.800.000 y se aplica un descuento o un aumento que esta dado por el resultado de los ICFES: / Hombres y Mujeres / Datos: - D: Descuento y A: Aumento/ Menor de 65pto - A: 25% / Entre 66 y 70pto. edad>22 - N/A / Entre 66 y 70pto. edad<=22 - D: 25% / Mayor 70pto - D: 50%
 
-/*alert("Si desea saber si es apto para las fuerzas militares llene los datos a continuacion");
+/*alert("Si desea saber si es apt@ para las fuerzas militares llene los datos a continuacion");
 let genero = prompt("Cual es su genero? ('M' para Hombres), ('F' para Mujeres)").toUpperCase();
 let edad = parseInt(prompt("Ingrese su edad"));
 let estatura = parseFloat(prompt("Ingrese su estatura"));
