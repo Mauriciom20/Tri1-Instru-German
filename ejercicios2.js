@@ -162,10 +162,10 @@ let resultadoIcfes = Number(prompt("Ingrese el resultado de su prueba ICFES(0-10
 let valorMatricula = 11800000;
 
 
-let validaconResultadoIcfes = resultadoIcfes >=0 && resultadoIcfes <=100? true : alert("Error, Ingrese valor de prueba ICFES(0-100)") + false;
+let validaconResultadoIcfes = resultadoIcfes >=0 && resultadoIcfes <=100? true : alert("Error, Ingrese un valor valido de prueba ICFES(0-100)") + false;
 let requisitosHombres = (estatura >= 1.70? true : false) + (edad >= 18 && edad <= 25? true : false) + (resultadoIcfes >= 60? true : false);
 let requisitosMujeres = (estatura >= 1.50? true : false) + (edad >= 18 && edad <= 28? true : false) + (resultadoIcfes >= 60? true : false);
-let validacionGenero = genero == "M"? requisitosHombres : genero == "F"? requisitosMujeres : alert("Error, ingrese un valor validado (M - Hombres) o (F - Mujeres)")
+let validacionGenero = genero == "M"? requisitosHombres : genero == "F"? requisitosMujeres : alert("Error, ingrese un valor valido (M - Hombres) o (F - Mujeres)")
 console.log(`Vg: ${validacionGenero}`)
 let aumento
 if(resultadoIcfes < 65 && (requisitosHombres == true || requisitosMujeres == true)){
