@@ -22,24 +22,82 @@ c. La cadena tiene una longitud múltiplo de 10 y la distribución de las bases 
 cantidad de Citosina (C) es cuatro veces la cantidad de Guanina, Timina (T) es dos veces la cantidad de
 Guanina y Adenina (A) es tres veces la cantidad de Guanina. La cadena debe tener cuatro bases.
 El programa debe garantizar que el usuario ingrese una longitud múltiplo de 10. Si esta condición no se
-cumple, el programa debe informar y solicitar nuevamente los datos.
-Parte 2:
-Usted es contratado por la empresa SoftwareCorp S.A. para crear un conjunto de funcionalidades de
-apoyo para el desarrollo de productos.
-1. Cree un programa que muestre los números impares entre -100 y n.
-2. Cree un programa que recorra una cadena y muestre si esta contiene la letra z.
-3. Cree un programa que pida números al usuario
-indefinidamente hasta que este ingrese un número
-divisible entre 9.
-4. Construir un programa que reciba un número entero positivo no superior a 1.000.000.000 e indique si
-el número es primo. Por ejemplo: Dado el número 73 indicar true. Dado el número 35 indicar false
-5. Se trata de implementar un programa que devuelva la cantidad de ocurrencias del dígito que más se
-repite en un número entero no negativo. Por ejemplo, para el caso de 343331 el número que más se
-repite es 3, por ende se debe devolver 4, que es la cantidad de ocurrencias del 3.
-6. Cree un programa que dado un número, determine cuál es el dígito de mayor valor que lo compone.
-Por ejemplo, dado el número 67259711, el programa debe devolver 9, ya que es el dígito de mayor valor
-que compone el número.
-7. Cree un programa que valide el registro de un usuario, de tal manera que pida a éste su email y su
-contraseña, si el email contiene el @ y la contraseña tiene una longitud entre 8 y 15, el programa deberá
-mostrar “Registro exitoso”, de lo contrario, el programa deberá seguir pidiendo los datos al usuario hasta
-que se ingresen datos válidos.*/
+cumple, el programa debe informar y solicitar nuevamente los datos.*/
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  };
+
+function baseSolicitada(){
+    let baseSolicitada = random(1, 4);
+    console.log(`b: ${baseSolicitada}`);
+    if (baseSolicitada >= 1 && baseSolicitada <= 4){
+        baseSolicitada == 1? baseSolicitada = adenina : baseSolicitada == 2? baseSolicitada = citosina : baseSolicitada == 3? baseSolicitada = guanina : baseSolicitada == 4? baseSolicitada = guanina
+    : "ERROR"};
+}
+
+let adenina = "A";//1
+let citosina = "C";//2
+let guanina = "G";//3
+let timina = "T";//4
+
+let baseSolicitada1 = random(1, 4);
+console.log(`b1: ${baseSolicitada1}`);
+let baseSolicitada2 = random(1, 4);
+console.log(`b1: ${baseSolicitada2}`);
+let baseSolicitada3 = random(1, 4);
+console.log(`b1: ${baseSolicitada2}`);
+let baseSolicitada4 = random(1, 4);
+console.log(`b1: ${baseSolicitada2}`);
+
+if (baseSolicitada1 >= 1 && baseSolicitada1 <= 4){
+    baseSolicitada1 == 1? baseSolicitada1 = adenina : baseSolicitada1 == 2? baseSolicitada1 = citosina : baseSolicitada1 == 3? baseSolicitada1 = guanina : baseSolicitada1 == 4? baseSolicitada1 = guanina
+: "ERROR"};
+
+if (baseSolicitada2 >= 1 && baseSolicitada2 <= 4){
+    baseSolicitada2 == 1? baseSolicitada2 = adenina : baseSolicitada2 == 2? baseSolicitada2 = citosina : baseSolicitada2 == 3? baseSolicitada2 = guanina : baseSolicitada2 == 4? baseSolicitada2 = guanina
+: "ERROR"};
+
+if (baseSolicitada3 >= 1 && baseSolicitada3 <= 4){
+    baseSolicitada3 == 1? baseSolicitada3 = adenina : baseSolicitada3 == 2? baseSolicitada3 = citosina : baseSolicitada3 == 3? baseSolicitada3 = guanina : baseSolicitada3 == 4? baseSolicitada3 = guanina
+: "ERROR"};
+
+if (baseSolicitada4 >= 1 && baseSolicitada4 <= 4){
+    baseSolicitada4 == 1? baseSolicitada4 = adenina : baseSolicitada4 == 2? baseSolicitada4 = citosina : baseSolicitada4 == 3? baseSolicitada4 = guanina : baseSolicitada4 == 4? baseSolicitada4 = guanina
+: "ERROR"};
+
+let programaQueSeDeseaEjecutar = prompt("Ingresa el programa que desea ejecutar(1(cadena de una base), 2(cadena de 2 bases) o 3(cadena de 4 bases))");
+let longitudCadena = prompt("indique la longitud de la cadena");
+switch(programaQueSeDeseaEjecutar == Number) {
+    case programaQueSeDeseaEjecutar == 1:{
+        let cadenaA = baseSolicitada1;
+
+        for (let index = 1; index < longitudCadena; index++) {
+            cadenaA = cadenaA + baseSolicitada1;
+        }
+        console.log(`La primera cadena ejecuta: `, cadenaA);
+        break;
+    }
+    case programaQueSeDeseaEjecutar == 2:{
+        let cadenaB1 = baseSolicitada1;
+        let cadenaB2 = baseSolicitada2;
+        let cadenaB = ""
+        for (let index = 1; index < longitudCadena; index++) {
+            cadenaB1 = cadenaB1 + baseSolicitada1;
+            cadenaB2 = cadenaB2 + baseSolicitada2;
+            cadenaB = (cadenaB1 + cadenaB2)
+        }
+        
+        console.log(`La primera cadena ejecuta: `, cadenaB);
+    break;
+    }
+    case programaQueSeDeseaEjecutar == 3:{
+        let cadenaC = " "
+        console.log(cadenaC);
+    break;
+    }
+    default:
+        console.log("Error");
+        break;
+}
+
