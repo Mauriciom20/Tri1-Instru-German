@@ -106,3 +106,94 @@ switch(parseInt(programaQueSeDeseaEjecutar)) {
         console.log("Error");
         break;
 }*/
+
+/*Parte 2:
+Usted es contratado por la empresa SoftwareCorp S.A. para crear un conjunto de funcionalidades de apoyo para el desarrollo de productos.
+1. Cree un programa que muestre los números impares entre -100 y n.*/
+
+/*function mostrarImpares(n) {
+    for (let i = -100; i <= n; i++) {
+        if (i % 2 !== 0) {
+            console.log(i);
+        }
+    }
+}
+
+mostrarImpares(50);*/
+
+//2. Cree un programa que recorra una cadena y muestre si esta contiene la letra z.
+
+/*function contieneLetraZ(cadena) {
+    return cadena.includes('z') || cadena.includes('Z');
+}
+
+let cadena1 = "Hola, ¿cómo estás?";
+let cadena2 = "La zorra rápida saltó sobre el perro.";
+console.log(contieneLetraZ(cadena1));
+console.log(contieneLetraZ(cadena2));*/
+
+//3. Cree un programa que pida números al usuario indefinidamente hasta que este ingrese un número divisible entre 9.
+
+/*function pedirNumeros() {
+    let numero;
+    do {
+        numero = parseInt(prompt("Ingrese un número:"));
+    } while (numero % 9 !== 0);
+    console.log(`El número ${numero} es divisible entre 9.`);
+}
+
+pedirNumeros();*/
+
+//4. Construir un programa que reciba un número entero positivo no superior a 1.000.000.000 e indique si el número es primo. Por ejemplo: Dado el número 73 indicar true. Dado el número 35 indicar false.
+
+/*function esPrimo(numero) {
+    if (numero <= 1) return false;
+    if (numero <= 3) return true;
+    if (numero % 2 === 0 || numero % 3 === 0) return false;
+    let i = 5;
+    while (i * i <= numero) {
+        if (numero % i === 0 || numero % (i + 2) === 0) return false;
+        i += 6;
+    }
+    return true;
+}
+
+console.log(esPrimo(73));
+console.log(esPrimo(35));*/
+
+//5. Se trata de implementar un programa que devuelva la cantidad de ocurrencias del dígito que más se repite en un número entero no negativo. Por ejemplo, para el caso de 343331 el número que más se repite es 3, por ende se debe devolver 4, que es la cantidad de ocurrencias del 3.
+
+
+
+//6. Cree un programa que dado un número, determine cuál es el dígito de mayor valor que lo compone. Por ejemplo, dado el número 67259711, el programa debe devolver 9, ya que es el dígito de mayor valor que compone el número.
+
+
+
+//7. Cree un programa que valide el registro de un usuario, de tal manera que pida a éste su email y su contraseña, si el email contiene el @ y la contraseña tiene una longitud entre 8 y 15, el programa deberá mostrar “Registro exitoso”, de lo contrario, el programa deberá seguir pidiendo los datos al usuario hasta que se ingresen datos válidos.*/
+
+/*function validarRegistro() {
+    let email = ""
+    let contrasena = ""
+    let encontrado = false;
+
+    do {
+        email = prompt("Ingrese su email:");
+        encontrado = false;
+
+        for (let i = 0; i < email.length; i++) {
+            if (email[i] === '@') {
+                encontrado = true;
+                break;
+            }
+        }
+
+    } while (!encontrado);
+
+    do {
+        contrasena = prompt("Ingrese su contraseña (entre 8 y 15 caracteres):");
+    } while (contrasena.length < 8 || contrasena.length > 15);
+
+    console.log("Registro exitoso.");
+}
+
+validarRegistro();*/
