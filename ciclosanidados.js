@@ -24,80 +24,85 @@ Guanina y Adenina (A) es tres veces la cantidad de Guanina. La cadena debe tener
 El programa debe garantizar que el usuario ingrese una longitud múltiplo de 10. Si esta condición no se
 cumple, el programa debe informar y solicitar nuevamente los datos.*/
 
-function random(min, max) {
+/*function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   };
 
-function baseSolicitada(){
-    let baseSolicitada = random(1, 4);
-    console.log(`b: ${baseSolicitada}`);
-    if (baseSolicitada >= 1 && baseSolicitada <= 4){
-        baseSolicitada == 1? baseSolicitada = adenina : baseSolicitada == 2? baseSolicitada = citosina : baseSolicitada == 3? baseSolicitada = guanina : baseSolicitada == 4? baseSolicitada = guanina
-    : "ERROR"};
-}
-
-let adenina = "A";//1
-let citosina = "C";//2
-let guanina = "G";//3
-let timina = "T";//4
+const adenina = "A";//1
+const citosina = "C";//2
+const guanina = "G";//3
+const timina = "T";//4
 
 let baseSolicitada1 = random(1, 4);
 console.log(`b1: ${baseSolicitada1}`);
 let baseSolicitada2 = random(1, 4);
-console.log(`b1: ${baseSolicitada2}`);
-let baseSolicitada3 = random(1, 4);
-console.log(`b1: ${baseSolicitada2}`);
-let baseSolicitada4 = random(1, 4);
-console.log(`b1: ${baseSolicitada2}`);
+console.log(`b2: ${baseSolicitada2}`);
 
 if (baseSolicitada1 >= 1 && baseSolicitada1 <= 4){
-    baseSolicitada1 == 1? baseSolicitada1 = adenina : baseSolicitada1 == 2? baseSolicitada1 = citosina : baseSolicitada1 == 3? baseSolicitada1 = guanina : baseSolicitada1 == 4? baseSolicitada1 = guanina
+    baseSolicitada1 == 1? baseSolicitada1 = adenina : baseSolicitada1 == 2? baseSolicitada1 = citosina : baseSolicitada1 == 3? baseSolicitada1 = guanina : baseSolicitada1 == 4? baseSolicitada1 = timina
 : "ERROR"};
 
 if (baseSolicitada2 >= 1 && baseSolicitada2 <= 4){
-    baseSolicitada2 == 1? baseSolicitada2 = adenina : baseSolicitada2 == 2? baseSolicitada2 = citosina : baseSolicitada2 == 3? baseSolicitada2 = guanina : baseSolicitada2 == 4? baseSolicitada2 = guanina
-: "ERROR"};
-
-if (baseSolicitada3 >= 1 && baseSolicitada3 <= 4){
-    baseSolicitada3 == 1? baseSolicitada3 = adenina : baseSolicitada3 == 2? baseSolicitada3 = citosina : baseSolicitada3 == 3? baseSolicitada3 = guanina : baseSolicitada3 == 4? baseSolicitada3 = guanina
-: "ERROR"};
-
-if (baseSolicitada4 >= 1 && baseSolicitada4 <= 4){
-    baseSolicitada4 == 1? baseSolicitada4 = adenina : baseSolicitada4 == 2? baseSolicitada4 = citosina : baseSolicitada4 == 3? baseSolicitada4 = guanina : baseSolicitada4 == 4? baseSolicitada4 = guanina
+    baseSolicitada2 == 1? baseSolicitada2 = adenina : baseSolicitada2 == 2? baseSolicitada2 = citosina : baseSolicitada2 == 3? baseSolicitada2 = guanina : baseSolicitada2 == 4? baseSolicitada2 = timina
 : "ERROR"};
 
 let programaQueSeDeseaEjecutar = prompt("Ingresa el programa que desea ejecutar(1(cadena de una base), 2(cadena de 2 bases) o 3(cadena de 4 bases))");
-let longitudCadena = prompt("indique la longitud de la cadena");
-switch(programaQueSeDeseaEjecutar == Number) {
-    case programaQueSeDeseaEjecutar == 1:{
+
+switch(parseInt(programaQueSeDeseaEjecutar)) {
+    case 1:{
+        let longitudCadenaA = parseInt(prompt("indique la longitud de la cadena"));
         let cadenaA = baseSolicitada1;
 
-        for (let index = 1; index < longitudCadena; index++) {
+        for (let index = 1; index < longitudCadenaA; index++) {
             cadenaA = cadenaA + baseSolicitada1;
         }
-        console.log(`La primera cadena ejecuta: `, cadenaA);
+        console.log(`La cadena ejecuta: `, cadenaA);
         break;
     }
-    case programaQueSeDeseaEjecutar == 2:{
+    case 2:{
+        let longitudCadenaB = parseInt(prompt("indique la longitud de la cadena"));
         let cadenaB1 = baseSolicitada1;
         let cadenaB2 = baseSolicitada2;
         let cadenaB = ""
-        for (let index = 1; index < longitudCadena; index++) {
+        for (let index = 1; index < longitudCadenaB; index++) {
             cadenaB1 = cadenaB1 + baseSolicitada1;
             cadenaB2 = cadenaB2 + baseSolicitada2;
             cadenaB = (cadenaB1 + cadenaB2)
         }
         
-        console.log(`La primera cadena ejecuta: `, cadenaB);
+        console.log(`La cadena ejecuta: `, cadenaB);
     break;
     }
-    case programaQueSeDeseaEjecutar == 3:{
-        let cadenaC = " "
-        console.log(cadenaC);
+    case 3:{
+        let longitudCadenaC = parseInt(prompt("indique la longitud de la cadena"));
+        let cadenaC = ""
+        if (longitudCadenaC % 10 !== 0) {
+            console.log("La longitud debe ser un múltiplo de 10. Por favor, ingresa otra longitud.");
+            console.log(longitudCadenaC = parseInt(prompt("indique la longitud de la cadena")))
+        } else {
+            let cantidadGuanina = longitudCadenaC / 10;
+        let cantidadCitosina = 4 * cantidadGuanina;
+        let cantidadTimina = 2 * cantidadGuanina;
+        let cantidadAdenina = 3 * cantidadGuanina;
+        
+        for (let i = 0; i < cantidadGuanina; i++) {
+            cadenaC += guanina;
+        }
+        for (let i = 0; i < cantidadCitosina; i++) {
+            cadenaC += citosina;
+        }
+        for (let i = 0; i < cantidadTimina; i++) {
+            cadenaC += timina;
+        }
+        for (let i = 0; i < cantidadAdenina; i++) {
+            cadenaC += adenina;
+        }
+        console.log(`La cadena ejecuta: `, cadenaC);
+        }
+
     break;
     }
     default:
         console.log("Error");
         break;
-}
-
+}*/
